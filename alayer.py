@@ -20,6 +20,9 @@ def alaykeun(str_in):
         
         # print(inc)
         if (inc >= 1):
+            # buat ngedobel huruf terakhir
+            if (str_in[ch] == " "):
+                res = chr(ord(str_in[ch-1])-32) + " "
             # lower case jd upper case
             if (ord(str_in[ch]) >= 97 and ord(str_in[ch]) <= 122 and inc == 1):
                 res = chr(ord(str_in[ch]) - 32)
