@@ -1,10 +1,11 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Sep  9 09:28:35 2019
-
-@author: ramhdi
-"""
+# alayer 1.0
+# Tugas ET3107 Pemrograman Lanjut
+# Mengubah suatu kalimat menjadi alay
+# dengan memanfaatkan bilangan random
+# Collaborator:
+# - Fikri F. Akbar 18115011 - github: fikfak 
+# - Rama Rahardi 18117026 - github: ramhdi
+# Created on Mon Sep  9 09:28:35 2019
 
 import random
 
@@ -14,6 +15,11 @@ def alaykeun(str_in):
     ch = 0
     inc = 0
 
+    # iterasi pada masing-masing elemen string masukan
+    # setiap iterasi ada bilangan random yang dibangkitkan
+    # yang dapat bernilai 0-2
+    # jika mendapat angka 1, huruf diubah menjadi upper case
+    # jika mendapat angka 2, huruf diubah menjadi angka yang mirip atau menjadi huruf yang mirip
     while (ch < size):
         res = str_in[ch]
         inc = random.randint(0,2)
@@ -57,7 +63,8 @@ def alaykeun(str_in):
     
     return output
 
+# main loop
 while True:
-    str_in = input("Tidak alay:" )
+    str_in = input("Tidak alay: " )
     str_out = alaykeun(str_in)
     print("Alay: " + str_out)
