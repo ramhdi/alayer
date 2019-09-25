@@ -7,4 +7,6 @@ Rabu, 25 September 2019 bikin latihan push pull
 git clone https://github.com/ramhdi/alayer.git  
 git add README.md  
 git commit -m "latian clone-commit-push"  
+# ato gausah add pake  
+# git commit -a -m "Latihan pandas"  
 git push
